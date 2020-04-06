@@ -327,6 +327,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7143727259275870152, guid: 6e56a416e88043b47b7ba547e30850f2, type: 3}
   population: 30
+  simulationTime: 10
+  architecture: 030000000200000003000000
 --- !u!4 &1288444697
 Transform:
   m_ObjectHideFlags: 0
