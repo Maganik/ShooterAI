@@ -21,6 +21,10 @@ public class Genome
         }
     }
 
+    public int Size
+    {
+        get { return this.size; }
+    }
     public List<float> Parameters
     {
         get { return parameters; }

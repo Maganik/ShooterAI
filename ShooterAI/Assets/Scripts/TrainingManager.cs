@@ -48,7 +48,7 @@ public class TrainingManager : MonoBehaviour
         }
         simulations = new List<GameObject>();
         generation.Fitness = fitness;
-        generation.nextGen();
+        generation.nextGen(0.05f, .5f);
         for (int i = 0; i < population; i++)
         {
             simulations.Add(GameObject.Instantiate(prefab, new Vector3(12 * i, 0), Quaternion.Euler(90, 0, 0)));

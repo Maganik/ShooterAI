@@ -5,10 +5,11 @@ public class Generation
 {
     private List<Genome> currentGen;
     private List<float> fitness;
-    private int nbGenome;
+    private readonly int nbGenome; 
 
     public Generation(int population, int genomeSize)
     {
+        nbGenome = population;
         fitness = new List<float>();
         currentGen = new List<Genome>();
 
@@ -79,10 +80,10 @@ public class Generation
         {
             //Proba settings
             probaTemp1 = rand.Next(probaTab.Count);
-            do
-            {
+           /* do
+            {*/
                 probaTemp2 = rand.Next(probaTab.Count);
-            } while (probaTab[probaTemp1] == probaTab[probaTemp2]);
+           // } while (probaTab[probaTemp1] == probaTab[probaTemp2]);
 
             //Forming nextgen
             nextGen[i] = currentGen[probaTab[probaTemp1]] + currentGen[probaTab[probaTemp2]];
